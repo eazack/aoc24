@@ -160,7 +160,6 @@ class AOCSolver(AutoRegister(solver_registry), ABC):
         Load the sample data to be accessed via `.sample_data` and `.sample_solution`
         """
         try:
-            open()
             with open(f"inputs/day{self.day}.test.txt") as f:
                 sample = self._clean_lines(f)
 
